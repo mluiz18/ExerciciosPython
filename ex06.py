@@ -1,0 +1,6 @@
+salarioBruto = int(input("Digite seu salário bruto: "))
+qHorasExtras = int(input("Digite a quantidade de horas extras: "))
+vHorasExtras = int(input("Digite o valor das horas extras: "))
+salarioBrutoTotal = salarioBruto+(qHorasExtras*vHorasExtras)
+descontoINSS = salarioBrutoTotal - (salarioBrutoTotal*8/100)
+print(f"O Seu salário líquido é de R${descontoINSS}")
