@@ -8,5 +8,3 @@ for x in range(i , f+1, p):
     s += n
 print(f"O Somátorio é {s}")
 print("Fim")
-
-#25:45
