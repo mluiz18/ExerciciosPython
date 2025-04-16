@@ -1,7 +1,12 @@
-frase = str(input("Digite a frase: ")).strip()
-tamanho = len(frase)
+frase = str(input("Digite a frase: ")).strip().upper()
+palavra = frase.split()
+junto = "".join(palavra)
+inverso = ""
+for letra in range(len(junto) -1, -1, -1):
+    inverso += junto[letra]
 
-for x in range(0,len(frase)):
-    if frase[x] == frase[tamanho-1]:
-        print(frase[x], frase[tamanho-1])
-        tamanho = tamanho - 1
+print(f"A Frase ao contrario é {inverso}")
+if inverso == junto:
+    print(f"A Frase {frase} é um palíndromo!")
+else:
+    print(f"A Frase {frase} NÃO é um palíndromo!")

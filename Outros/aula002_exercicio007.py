@@ -1,11 +1,12 @@
-numero = int(input("digite um numero: "))
-isNumeroPrimo = False
+numero = int(input("Digite o número: "))
+divisivel = 0
+c = 1
+for i in range(numero+1):
+    if numero % c == 0:
+        divisivel += 1
+    c += 1
 
-for x in range(1,numero+1):
-    print(x)
-    if numero / x == 1 or numero / x == numero:
-        isNumeroPrimo = True
-    else:
-        isNumeroPrimo = False
-
-print(f"o número {numero} é primo? {isNumeroPrimo}")
+if divisivel > 2:
+    print(f"O Numero {numero} não é primo!")
+else:
+    print(f"O Número {numero} é primo!")
