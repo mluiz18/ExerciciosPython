@@ -1,7 +1,7 @@
 def ordenador(vetor):
     for i in range(len(vetor)):
         for j in range(i, len(vetor)):
-            if vetor[j] < vetor[i]:!!""
+            if vetor[j] < vetor[i]:
                 aux = vetor[i]
                 vetor[i] = vetor[j]
                 vetor[j] = aux

@@ -13,6 +13,15 @@ palavras_erradas = 0
 palavras_usadas = []
 rodadas_gastas = 1
 
+def verificador(letra, aux, palavra):
+    letra_achada = False
+    for i in range(len(aux)):
+        if aux[i] == letra:
+            palavra[i] = letra
+            letra_achada = True
+
+    return letra_achada
+
 while palavras_erradas < 6:
     pode_verificar = True
     letra = str(input("Digite sua letra: ")).upper().strip()
@@ -33,11 +42,7 @@ while palavras_erradas < 6:
 
             if pode_verificar:
                 palavras_usadas.append(letra)
-                letra_achada = False
-                for i in range(len(aux)):
-                    if aux[i] == letra:
-                        palavra[i] = letra
-                        letra_achada = True
+                letra_achada = verificador(letra, aux, palavra)
 
             if not letra_achada:
                 palavras_erradas = palavras_erradas + 1
