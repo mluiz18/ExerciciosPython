@@ -1,15 +1,28 @@
 valores = []
 for x in range(5):
-    valores.append(int(input("Digite um valor: ")))
+    valores.append(int(input(f"Digite um valor para a posição {x}: ")))
 
 menor = valores[0]
 maior = valores[0]
-for numero in range(len(valores)):
-    if valores[numero] > maior:
-        maior = valores[numero]
-    else:
-        if valores[numero] < menor:
-            menor = valores[numero]
+posicao_maior = []
+posicao_menor = []
 
-print(f"O Maior valor da lista é {maior}")
-print(f"O Menor valor da lista é {menor}")
+
+for i in range(len(valores)):
+    if valores[i] > maior:
+        maior = valores[i]
+    else:
+        if valores[i] < menor:
+            menor = valores[i]
+
+
+for x in range(len(valores)):
+    if valores[x] == maior:
+        posicao_maior.append(x)
+    else:
+        if valores[x] == menor:
+            posicao_menor.append(x)
+
+print(f"Você digitou os valores: {valores}")
+print(f"O Maior valor da lista é {maior}, nas posições: {posicao_maior}")
+print(f"O Menor valor da lista é {menor}, nas posições:: {posicao_menor}")
