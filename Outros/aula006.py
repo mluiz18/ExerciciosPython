@@ -58,7 +58,7 @@ for c, v in enumerate(val):
     print(f"Indice: {c}, Valor = {v}")
 
 # Para passa todos os valores de uma lista para outra, eu posso, ou criar um for, ou simplismente b = a[:]
-a = [2,0,1,9]
+a = [[2,0,1,9], [0,2,1,2]]
 b = a[:]
 print(b)
 # Eu não posso fazer b = a, por que o python vai fazer uma ligação entre as duas listas me impedindo de modificar somente uma
