@@ -16,9 +16,9 @@ while c < len(jogadas):
     c+=1
     sleep(1)
 
-print("-="*3, "RESULTADOS", "-="*3)
-print(f"1º Lugar: {geral[0][1]} com {geral[0][0]}")
-print(f"2º Lugar: {geral[1][1]} com {geral[1][0]}")
-print(f"3º Lugar: {geral[2][1]} com {geral[2][0]}")
-print(f"4º Lugar: {geral[3][1]} com {geral[3][0]}")
+print("-="*3, "RESULTADOS", "=-"*3)
+
+for x in range(4):
+    print(f"{x+1}º Lugar: {geral[x][1]} com {geral[x][0]}")
+
 
