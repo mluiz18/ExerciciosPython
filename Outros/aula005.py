@@ -3,5 +3,4 @@ idade = int(input("Idade: "))
 sexo = str(input("sexo: "))
 peso = str(input("Peso: "))
 person = nome, idade, sexo, peso
-del(person)
-print(person)
+print(person[0])

@@ -1,6 +1,4 @@
-num = [2,1,6,5,4,3,2,0,10,2,3]
+for i in range(10):
+    a = 5
 
-while 2 in num:
-    num.remove(2)
-
-print(num)
+print(a)
