@@ -1,13 +1,11 @@
 import aula011
 
-v = float(input("Qual o valor da moeda? "))
-ac = float(input("Qual valor acionar a moeda? "))
-dc = float(input("Qual valor remover da moeda? "))
+v = float(input("Qual o valor da moeda? R$"))
 
-acrescimo = aula011.aumentar(v, ac)
-decrescimo = aula011.diminuir(v, dc)
+acrescimo = aula011.aumentar(v, 10)
+decrescimo = aula011.diminuir(v, 10)
 
-print(f"{v} + {ac} = {acrescimo}")
-print(f"{v} - {dc} = {decrescimo}")
-print(f"{v} * 2 = {aula011.dobro(v)}")
-print(f"{v} / 2 = {aula011.metade(v)}")
+print(acrescimo)
+print(decrescimo)
+print(aula011.dobro(v))
+print(aula011.metade(v))
