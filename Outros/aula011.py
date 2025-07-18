@@ -10,3 +10,17 @@
 #arquivo (em python) = potencial modulo
 #pasta (em python) = potencial pacotes
 #ou seja, as pastas "Outros" ou "Faculdade", para o python são potenciais pacotes
+
+#funções que eu tenho que importar nos exercicios futuros
+
+def aumentar(n, a):
+    return n + a
+
+def diminuir(n, d):
+    return n - d
+
+def dobro(n):
+    return n * 2
+
+def metade(n):
+    return n / 2
