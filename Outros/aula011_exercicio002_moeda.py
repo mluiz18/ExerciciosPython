@@ -1,4 +1,4 @@
-import aula011_utilidades as aula011
+from aula011_utilidades import numero as aula011
 
 def resumo(p, a, r):
     aumento = aula011.aumentar(p, a)
