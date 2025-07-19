@@ -15,14 +15,20 @@
 
 def aumentar(n, a=0):
     novo_valor = n + (n * a)/100
-    return f"O Valor R${n} + {a}% = R${novo_valor}"
+    return novo_valor
 
 def diminuir(n, d=0):
     novo_valor = n - (n * d) / 100
-    return f"O Valor R${n} menos o decréscimo de {d}% = R${novo_valor}"
+    return novo_valor
 
 def dobro(n):
-    return f"O Dobro de R${n} é R${n * 2}"
+    return n * 2
 
 def metade(n):
-    return f"A Metade de R${n} é R${n / 2}"
+    return n / 2
+
+def moeda(valor=0, moeda="R$", f=True):
+    if f:
+        return f"{moeda}{valor}"
+    else:
+        return valor
