@@ -1,11 +1,11 @@
-string = "Mazda"
-texto = string.upper().split()
+n = int(input("Digite um número: "))
+s = 0
 
-c = 0
-for p in texto:
-    for i in range(len(p)):
-        if p[i].isalpha():
-            if p[i] in "AEIOUÁÉÍÓÚÀÈÌÒÙÂÊÎÔÛ":
-                c += 1
+if n < 1:
+    for i in range(n,1):
+        s += i
+else:
+    for i in range(1,n+1):
+        s += i
 
-print(f"Na frase '{string}'. Temos ao todo {c} vogais.")
+print(f"A Soma de todos os número de 1 até {n} é {s}")
