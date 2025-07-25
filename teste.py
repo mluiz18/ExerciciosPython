@@ -1,8 +1,11 @@
-# Receba uma frase e inverta a ordem das palavras, não os caracteres.
+string = "Mazda"
+texto = string.upper().split()
 
-def inversor_de_frase(frase):
-    texto = frase.split()
-    invertido = texto[::-1]
-    return " ".join(invertido)
+c = 0
+for p in texto:
+    for i in range(len(p)):
+        if p[i].isalpha():
+            if p[i] in "AEIOUÁÉÍÓÚÀÈÌÒÙÂÊÎÔÛ":
+                c += 1
 
-print(inversor_de_frase("Eu amo pudim!"))
+print(f"Na frase '{string}'. Temos ao todo {c} vogais.")
