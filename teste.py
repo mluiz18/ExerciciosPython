@@ -1,18 +1,18 @@
-from random import randint
+palavra = "arara"
 
-lista = []
-for i in range(10):
-    lista.append(randint(0,18))
-print(lista)
+c = 0
+tamanho = len(palavra)
+e_palindromo = 0
 
-maior = lista[0]
-menor = lista[0]
-for i in range(len(lista)):
-    if lista[i] > maior:
-        maior = lista[i]
+for i in range(tamanho):
+    if palavra[i] == palavra[tamanho-1]:
+        e_palindromo += 1
+    c += 1
+    tamanho -= 1
+    if e_palindromo > tamanho:
+        print(f"A Palavra {palavra} é um palíndromo!")
+        break
     else:
-        if lista[i] < menor:
-            menor = lista[i]
-
-print(maior)
-print(menor)
+        if c == tamanho:
+            print(f"A Palavra {palavra} NÃO é um palíndromo!")
+            break
