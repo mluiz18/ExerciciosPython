@@ -1,11 +1,18 @@
-n = int(input("Digite um número: "))
-c = 0
+from random import randint
 
-for i in range(1, n+1):
-    if n % i == 0:
-        c+=1
+lista = []
+for i in range(10):
+    lista.append(randint(0,18))
+print(lista)
 
-if c == 2:
-    print(f"O Número {n} É primo!")
-else:
-    print(f"O Número {n} NÃO É primo!")
+maior = lista[0]
+menor = lista[0]
+for i in range(len(lista)):
+    if lista[i] > maior:
+        maior = lista[i]
+    else:
+        if lista[i] < menor:
+            menor = lista[i]
+
+print(maior)
+print(menor)
