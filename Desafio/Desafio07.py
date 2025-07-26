@@ -1,8 +1,12 @@
-#Par ou impar
+#contar vogais
 
-n = int(input("Numero: "))
+txt = "Eu amo café"
+frase = txt.upper().split()
+v = 0
+print(frase)
+for i in range(len(frase)):
+    for j in range(len(frase[i])):
+        if frase[i][j] in "AEIOUÁÉÍÓÚÀÈÌÒÙÂÊÎÔÛ":
+            v += 1
 
-if n % 2 == 0:
-    print("é par")
-else:
-    print("é impar")
+print(v)
